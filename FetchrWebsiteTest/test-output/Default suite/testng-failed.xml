@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.fetchr.testcases.TrackingPageTest">
+        <methods>
+          <include name="searchingForInvalidOrderNumbers"/>
+          <include name="trackingTitleTest"/>
+          <include name="searchForEmptyOrderTrackingNumbers"/>
+          <include name="clickOnCoronaSafetyMessage"/>
+          <include name="checkOrderHistory"/>
+          <include name="checkTheStatusOfOrderByTrackingNum"/>
+          <include name="NavigatetoRescheduleOrderScreem"/>
+          <include name="enteringInvalidInputInOrderNumbers"/>
+          <include name="clickOnTermsAndConditions"/>
+          <include name="navigateToDeliveryMapsScreen"/>
+          <include name="trackingUrlCheck"/>
+          <include name="switchLanguageToArabic"/>
+          <include name="trackingLogoCheck"/>
+          <include name="clickOnPrivacyPolicy"/>
+        </methods>
+      </class> <!-- com.fetchr.testcases.TrackingPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

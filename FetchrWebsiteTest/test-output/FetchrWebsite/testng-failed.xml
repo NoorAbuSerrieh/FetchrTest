@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [FetchrWebsite]">
+  <parameter name="browser" value="firefox"/>
+  <test parallel="none" name="End to End Test on chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.fetchr.testcases.TermsAndConditionsPageTest">
+        <methods>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="termsSwitchLanguageToArabic" invocation-numbers="0"/>
+          <include name="login"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.fetchr.testcases.TermsAndConditionsPageTest -->
+      <class name="com.fetchr.testcases.TrackingPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="switchLanguageToArabic" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.fetchr.testcases.TrackingPageTest -->
+      <class name="com.fetchr.testcases.CoronaSafetyPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.fetchr.testcases.CoronaSafetyPageTest -->
+      <class name="com.fetchr.testcases.PrivacyPolicyPageTest">
+        <methods>
+          <include name="login"/>
+          <include name="login"/>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="privacySwitchLanguageToArabic" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.fetchr.testcases.PrivacyPolicyPageTest -->
+      <class name="com.fetchr.testcases.config">
+        <methods>
+          <include name="start"/>
+          <include name="End"/>
+        </methods>
+      </class> <!-- com.fetchr.testcases.config -->
+    </classes>
+  </test> <!-- End to End Test on chrome(failed) -->
+  <test parallel="none" name="End to End Test on firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.fetchr.testcases.TermsAndConditionsPageTest">
+        <methods>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="termsSwitchLanguageToArabic" invocation-numbers="0"/>
+          <include name="login"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.fetchr.testcases.TermsAndConditionsPageTest -->
+      <class name="com.fetchr.testcases.TrackingPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="switchLanguageToArabic" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.fetchr.testcases.TrackingPageTest -->
+      <class name="com.fetchr.testcases.CoronaSafetyPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.fetchr.testcases.CoronaSafetyPageTest -->
+      <class name="com.fetchr.testcases.PrivacyPolicyPageTest">
+        <methods>
+          <include name="login"/>
+          <include name="login"/>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="privacySwitchLanguageToArabic" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.fetchr.testcases.PrivacyPolicyPageTest -->
+      <class name="com.fetchr.testcases.config">
+        <methods>
+          <include name="start"/>
+          <include name="End"/>
+        </methods>
+      </class> <!-- com.fetchr.testcases.config -->
+    </classes>
+  </test> <!-- End to End Test on firefox(failed) -->
+</suite> <!-- Failed suite [FetchrWebsite] -->
