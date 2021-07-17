@@ -1,2 +1,0 @@
-# FetchrTest
-Fetchr Website Testing
