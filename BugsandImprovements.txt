@@ -1,0 +1,4 @@
+Please see the below notes found while writng the tests:
+1. Language of tracking page is not changed from the first click you need to click multiple times to see the change(as you will see tests related to this note will fail)
+2. Language of Privacy policy and Terms and Conditions screens doesn't change(as you will see tests related to this note will fail)
+3. The validation messages when entering invalid input in tracking number should diffrentiate between empty, invalid number and invalid inputs in the field.
