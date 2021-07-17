@@ -17,7 +17,7 @@ import com.fetchr.util.TestUtils;
 import com.relevantcodes.extentreports.LogStatus;
 
 //import atu.testrecorder.ATUTestRecorder;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
+//import atu.testrecorder.exceptions.ATUTestRecorderException;
 
 public class CoronaSafetyPageTest extends TestBase {
 
@@ -30,7 +30,7 @@ public class CoronaSafetyPageTest extends TestBase {
 
 	@Parameters({ "browser" })
 	@BeforeMethod()
-	public void setUp(String browser, Method method) throws ATUTestRecorderException, IOException {
+	public void setUp(String browser, Method method) throws IOException {
 		Logger = extent.startTest(method.getName());
 		Initalization(browser);
 		trackingPage = new TrackingPage();
@@ -41,7 +41,7 @@ public class CoronaSafetyPageTest extends TestBase {
 	}
 
 	@AfterMethod()
-	public void tearDown(Method method, ITestResult result) throws ATUTestRecorderException, IOException {
+	public void tearDown(Method method, ITestResult result) throws IOException {
 		TestUtils.TakeScreenshot(method.getName());
 		//record.stop();
 		if (result.getStatus() == ITestResult.SUCCESS) {
@@ -59,7 +59,7 @@ public class CoronaSafetyPageTest extends TestBase {
 	}
 
 	@Test(priority = 23)
-	public void SafetyTitleTest(Method method) throws IOException, ATUTestRecorderException, InterruptedException {
+	public void SafetyTitleTest(Method method) throws IOException,  InterruptedException {
 		String expectedResults = "Safety and business continuity during COVID-19 - Fetchr";
 		String actualResults = CoronaPage.getTitle();
 		Assert.assertEquals(actualResults, expectedResults, "Safety Title is wrong");

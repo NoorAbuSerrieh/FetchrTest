@@ -12,7 +12,7 @@ import com.fetchr.util.WebListeners;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 //import atu.testrecorder.ATUTestRecorder;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
+//import atu.testrecorder.exceptions.ATUTestRecorderException;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -32,7 +32,7 @@ public class TestBase {
 		prop.load(fis);
 	}
 
-	public void Initalization(String browser) throws ATUTestRecorderException, IOException {
+	public void Initalization(String browser) throws IOException {
 		
 		if(browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();

@@ -12,7 +12,7 @@ import com.fetchr.pages.TrackingPage;
 import com.fetchr.util.TestUtils;
 import com.relevantcodes.extentreports.LogStatus;
 //import atu.testrecorder.ATUTestRecorder;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
+//import atu.testrecorder.exceptions.ATUTestRecorderException;
 
 public class DeliveryMapsPageTest extends TestBase {
 
@@ -25,7 +25,7 @@ public class DeliveryMapsPageTest extends TestBase {
 
 	@Parameters({ "browser" })
 	@BeforeMethod()
-	public void login(String browser, Method method) throws IOException, ATUTestRecorderException {
+	public void login(String browser, Method method) throws IOException {
 		Logger = extent.startTest(method.getName());
 		Initalization(browser);
 		trackingPage = new TrackingPage();
@@ -34,7 +34,7 @@ public class DeliveryMapsPageTest extends TestBase {
 	}
 
 	@AfterMethod()
-	public void close(Method method, ITestResult result) throws ATUTestRecorderException, IOException {
+	public void close(Method method, ITestResult result) throws IOException {
 		TestUtils.TakeScreenshot(method.getName());
 		//record.stop();
 		if (result.getStatus() == ITestResult.SUCCESS) {

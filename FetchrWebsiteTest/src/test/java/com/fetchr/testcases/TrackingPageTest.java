@@ -18,7 +18,7 @@ import com.fetchr.pages.TrackingPage;
 import com.fetchr.util.TestUtils;
 import com.relevantcodes.extentreports.LogStatus;
 //import atu.testrecorder.ATUTestRecorder;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
+//import atu.testrecorder.exceptions.ATUTestRecorderException;
 public class TrackingPageTest extends TestBase {
 	
 	public TrackingPageTest() throws IOException {
@@ -36,7 +36,7 @@ public class TrackingPageTest extends TestBase {
 	
 	@Parameters({"browser"})
 	@BeforeMethod() 
-	public void setUp(String browser, Method method) throws ATUTestRecorderException, IOException{
+	public void setUp(String browser, Method method) throws IOException{
 	Logger = extent.startTest(method.getName());
 	Initalization(browser);
 	trackingPage = new TrackingPage();
@@ -46,7 +46,7 @@ public class TrackingPageTest extends TestBase {
 	}	
 	
 	@AfterMethod()
-	public void tearDown(Method method , ITestResult result) throws ATUTestRecorderException, IOException {
+	public void tearDown(Method method , ITestResult result) throws IOException {
 		TestUtils.TakeScreenshot(method.getName());
 		//record.stop();
 		if (result.getStatus() == ITestResult.SUCCESS ) {
@@ -63,7 +63,7 @@ public class TrackingPageTest extends TestBase {
 
 	
 	@Test(priority= 1 )
-	public void trackingTitleTest(Method method) throws IOException, ATUTestRecorderException { 
+	public void trackingTitleTest(Method method) throws IOException{ 
 		String expectedResults = "Fetchr Track";
     	String actualResults = trackingPage.getTitle();
     	Assert.assertEquals(actualResults, expectedResults, "Tracking Title is wrong");

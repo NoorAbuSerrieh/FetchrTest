@@ -14,7 +14,7 @@ import com.fetchr.pages.TrackingPage;
 import com.fetchr.util.TestUtils;
 import com.relevantcodes.extentreports.LogStatus;
 //import atu.testrecorder.ATUTestRecorder;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
+//import atu.testrecorder.exceptions.ATUTestRecorderException;
 
 
 
@@ -30,7 +30,7 @@ public class TermsAndConditionsPageTest extends TestBase{
 	
 	@Parameters({"browser"})
 	@BeforeMethod()
-	public void login(String browser, Method method) throws IOException, ATUTestRecorderException
+	public void login(String browser, Method method) throws IOException
 	{
 		Logger = extent.startTest(method.getName());
 		Initalization(browser);
@@ -41,7 +41,7 @@ public class TermsAndConditionsPageTest extends TestBase{
 	}
 	
 	@AfterMethod()
-	public void close(Method method, ITestResult result) throws ATUTestRecorderException, IOException
+	public void close(Method method, ITestResult result) throws IOException
 	{
 		TestUtils.TakeScreenshot(method.getName());
 		//record.stop();
@@ -58,7 +58,7 @@ public class TermsAndConditionsPageTest extends TestBase{
 	}
 	
 	@Test(priority= 15)
-	public void termsTitleTest(Method method) throws IOException, ATUTestRecorderException {
+	public void termsTitleTest(Method method) throws IOException {
 		String expectedResults = "Fetchr Track";
     	String actualResults = termPage.getTitle();
     	Assert.assertEquals(actualResults, expectedResults, "Terms Title is wrong");
